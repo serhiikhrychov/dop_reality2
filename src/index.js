@@ -22,31 +22,19 @@ let container, camera, scene, renderer, effect;
 				container = document.createElement( 'div' );
 				document.body.appendChild( container );
 
-				camera = new THREE.PerspectiveCamera( 10, window.innerWidth / window.innerHeight, 0.01, 100 );
-				camera.position.z = 30;
-				camera.focalLength = 30;
-
-				// const path = "textures/cube/pisa/";
-				// const format = '.png';
-				// const urls = [
-				// 	path + 'px' + format, path + 'nx' + format,
-				// 	path + 'py' + format, path + 'ny' + format,
-				// 	path + 'pz' + format, path + 'nz' + format
-				// ];
-
-				// const textureCube = new THREE.MeshBasicMaterial( { color: 0x008000} );
+				camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.01, 100 );
+				camera.position.z = 3;
+				camera.focalLength = 3;
 
 				scene = new THREE.Scene();
-				// scene.background = textureCube;
 
 				const geometry = new ParametricGeometry(hyperbolicHelicoidEquantion, 10, 16);
 				//  const geometry = new THREE.SphereGeometry( 0.1, 32, 16 );
-				// const material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
         const material = new THREE.MeshNormalMaterial();
 
 				console.log(geometry);
 
-				for ( let i = 0; i < 100; i ++ ) {
+				for ( let i = 0; i < 50; i ++ ) {
 
 					const mesh = new THREE.Mesh( geometry, material );
 
