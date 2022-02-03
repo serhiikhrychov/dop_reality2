@@ -10,3 +10,5 @@ https://threejs.org/examples/?q=anagl#webgl_effects_anaglyph
 
 Розмістіть програмний код із виконаним завданням на гугл диску, та додайте посилання у файлі із завданням.
 Також додайте два скріншота, які демонструють результат виконання програми
+
+**Hosting - https://serhiikhrychov.github.io/dop_reality2/**  
